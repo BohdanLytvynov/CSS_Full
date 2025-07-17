@@ -26,6 +26,28 @@
     font-size: 25px;
     text-align: right;
   }
+
+  .block{
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+    display: block;
+  }
+
+  .inline{
+    background-color: green;
+    color: white;
+    font-size: 25px;    
+    display: inline;
+  }
+
+  .wrapper{
+    display: block;
+    text-align: center;
+    border: 1px solid red;
+    background-color: yellow;
+  }
 </style>
 
 <h1>Left</h1>
@@ -41,3 +63,15 @@
 <p>
   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero placeat laboriosam inventore perferendis nemo nesciunt dolorum at deleniti dicta fuga, magni eum rerum aperiam quas vel maiores velit laudantium fugit soluta! Explicabo aliquam nostrum illo expedita sed laboriosam numquam praesentium. Repellat ad delectus ducimus. Repellat fugiat neque maiores labore obcaecati.
 </p>
+
+<h1>Display of Elements</h1><hr>
+<h2>1 Block</h2>
+<h1 class="block">Lorem ipsum dolor sit amet.</h1>
+
+<h2>2 Inline</h2>
+<h1 class="inline">Lorem ipsum dolor sit amet.</h1>
+
+<h2>3 Inline + Wrapping</h2>
+<div class="wrapper">
+  <h1 class="inline">Lorem ipsum dolor sit amet.</h1>
+</div>
