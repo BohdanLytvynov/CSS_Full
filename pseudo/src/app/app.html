@@ -1,0 +1,40 @@
+<style>
+  a:link{
+    color: orange;
+    text-decoration: none;
+  }
+
+  a:visited{
+    color:blue;
+    text-decoration: dotted;
+  }
+
+  a:hover{
+    color: black;
+  }
+
+  a:active{
+    color: rgb(162, 226, 67);
+  }
+
+  .dropdown-content a{
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content a{
+    display: block;
+  }
+</style>
+
+<a href="https://www.google.com/?hl=uk">Reference to Google</a>
+
+<h1>Dropdown example</h1>
+
+<div class="dropdown">
+  <a href="">Items</a>
+  <div class="dropdown-content">
+    <a href="">Item1</a>
+    <a href="">Item2</a>
+    <a href="">Item3</a>
+  </div>
+</div>
