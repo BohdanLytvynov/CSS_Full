@@ -1,0 +1,90 @@
+<style>
+  /* Applying 1 style to several tags */
+  h1, h2{
+    color: green;
+}
+/* class name selector */
+.header{
+    color: black;
+}
+/* class name selector */
+.first-elem{
+    color: purple;
+}
+/* descendent class combinator */
+ul li{
+    color: orange;
+    font-size: 40px;    
+}
+/* id selector */
+#second{
+    color: red;
+}
+/* attribute type selector */
+input[type="email"]{
+    border-color: purple;
+    color: white;
+    background-color: black;
+}
+/* tag selector */
+input{
+    margin-top: 5px;
+    border-color: orange;
+}
+
+
+
+</style>
+
+<hr>
+<h1 class="header">Common Style for different Elements</h1>
+<hr>
+<h1>Some Header 1</h1>
+<h2>Heading 2</h2>
+
+<hr>
+<h1 class="header">Parent Child</h1>
+<hr>
+<ul>
+  <li class="first-elem">Elem1</li>
+  <li id="second">Elem2</li>
+  <li>Elem3</li>
+</ul>
+
+<hr><h1 class="header">Attribute Selector</h1><hr>
+
+<input type="text" placeholder="Name:"><br>
+<input type="email" placeholder="Email:">
+
+<hr><h1 class="header">CSS Combinators</h1><hr>
+
+<style>
+  /* Descendent Combinator */
+  section p{
+    color: red;
+  }
+  /* Child combinator */
+  section > p{
+    color: green;
+  }
+  /* Sibling Combinator */
+  section h3 + p{
+    color: orange;
+  }
+  /* General sibing Selector */
+  section h3 ~ p{
+    color: purple;
+  }
+</style>
+
+<section>
+  <p>Paragraph</p>
+  <h3>Heading</h3>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+  <div>
+    <p>Nested Paragraph</p>
+  </div>
+  <p>Paragraph 4</p>
+  <p>Paragraph 5</p>
+</section>
