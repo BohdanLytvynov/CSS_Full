@@ -66,3 +66,21 @@
   <li>Item4</li>
   <li>Item5</li>
 </ul>
+
+<h1>Pseudo Elements</h1>
+
+<style>
+  .head::before{
+    color: green;
+    font-size: 25px;
+    content: "This is ";
+  }
+
+  .head::after{
+    color: orange;
+    font-size: 25px;
+    content: " of the site!";
+  }
+</style>
+
+<h1 class="head">Header</h1>
