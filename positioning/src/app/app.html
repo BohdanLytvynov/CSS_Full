@@ -1,0 +1,260 @@
+
+<style>
+
+.container{
+  background-color: orange;
+  width:700px;
+  height: 350px;
+}
+
+.box{
+  width:350px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 25px;
+  color: white;
+}
+
+.box-1{
+  background-color: green;  
+}
+
+.box-2{
+  background-color: royalblue;
+  position: relative;
+  top: 20px;
+  left: 10px;  
+}
+
+.box-3{
+  background-color: grey;
+}
+
+.label{
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+</style>
+<hr>
+<h1>Relative - Positioning</h1>
+<hr>
+<div class="container">
+  <h2 class="label">Static</h2>
+  <div class="box box-1">Box 1 (Static)</div>
+  <div class="box box-2">Box 2 (Relative, top - 20, left - 10)</div>
+  <div class="box box-3">Box 3 (Static)</div>
+</div>
+
+
+<style>
+  .container-5{  
+  position: relative;
+  background-color: purple;
+  width:700px;
+  height: 400px;  
+}
+
+.box-5{
+  width:350px;
+  height: 100px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: white;
+}
+
+.box-14{
+  background-color: red;  
+  position: absolute;
+  left: 60px;
+}
+
+.label{
+  position: relative;
+  left: 20px;
+  top: 0px;
+}
+
+</style>
+
+<hr><h1>Absolute - Relative Positioning</h1><hr>
+
+<div class="container-5">
+  <h2 class="label">Relative</h2>
+  <div class="box-5 box-14">Box 14 (Absolute)</div>  
+</div>
+
+<style>
+  .container-2{
+  background-color: orange;
+  width:700px;
+  height: 400px;
+}
+
+.box-2{
+  width:350px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 25px;
+  color: white;
+}
+
+.box-4{
+  background-color: green;
+  position: absolute; 
+  top: 20px;
+  left: 320px;
+}
+
+.box-5{
+  background-color: royalblue;   
+}
+
+.box-6{
+  background-color: grey;
+}
+
+.label{
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+.msg{
+  font-size: 16px;
+}
+
+.msg::before{
+  content: "Box 4 ";
+  font-size: 25px;
+  color: white;
+}
+</style>
+
+<hr>
+<h1>Absolute Positioning</h1>
+<hr>
+
+<div class="container-2">
+  <h2 class="label">Static</h2>
+  <div class="box-2 box-4 msg">(Absolute position) Element out of normal flow! And positioned according to viewport of the Browser.</div>
+  <div class="box-2 box-5">Box 5 (Static)</div>
+  <div class="box-2 box-6">Box 6 (Static)</div>
+</div>
+
+<hr><h1>Absolute - Absolute</h1><hr>
+
+<style>
+.container-3{
+  position: absolute;
+  background-color: orange;
+  width:700px;
+  height: 400px;
+}
+
+.box-3{
+  width:350px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 25px;
+  color: white;
+}
+
+.box-7{
+  background-color: green;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;   
+}
+
+.box-8{
+  background-color: royalblue;   
+}
+
+.box-9{
+  background-color: grey;
+}
+
+.label{
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+.msg{
+  font-size: 16px;
+}
+
+</style>
+
+<div class="container-3">
+  <h2 class="label">Absolute</h2>
+  <div class="box-3 box-7">Box 7(Position - Absolute)</div>
+  <div class="box-3 box-8">Box 8(Static)</div>
+  <div class="box-3 box-9">Box 9(Static)</div>
+</div>
+
+<style>
+.container-4{  
+  position: fixed;
+  background-color: purple;
+  width:700px;
+  height: 400px;
+  top: 50px;
+  left: 50px;
+}
+
+.box-4{
+  width:350px;
+  height: 100px;
+  border: 2px solid black;
+  font-size: 25px;
+  color: white;
+}
+
+.box-10{
+  background-color: red;
+  position: static; 
+  left: 10px;
+}
+
+.box-11{
+  background-color: green;   
+  position: static;
+  left: 10px;  
+}
+
+.box-12{
+  background-color: blue;
+  position: static;  
+  left: 10px;  
+}
+
+.label{
+  position: relative;
+  left: 20px;
+  top: 0px;
+}
+
+.msg{
+  font-size: 16px;
+}
+
+.hide{
+  display: none;
+}
+
+</style>
+
+<hr><h1>Fixed Position</h1><hr>
+
+<div [ngClass]="hide? 'hide' : 'container-4'">
+  <h2 class="label">Fixed</h2>
+  <div class="box-4 box-10">Box 10</div>
+  <div class="box-4 box-11">Box 11</div>
+  <div class="box-4 box-12">Box 12</div>
+  <button (click)="onHideClicked()">Hide</button>
+</div>
+
+
