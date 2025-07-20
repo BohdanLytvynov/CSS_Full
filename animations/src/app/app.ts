@@ -1,0 +1,29 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, CommonModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css'
+})
+export class App {
+  protected title = 'animations';
+
+  buttonTitle : string = "Start";
+  click : boolean = false;
+
+  onClick(){
+    this.click = !this.click;
+
+    if(this.click)
+    {
+      this.buttonTitle = "Pause";
+    }
+    else
+    {
+      this.buttonTitle = "Start";
+    }
+  }
+}
