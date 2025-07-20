@@ -1,0 +1,27 @@
+<style>
+  .head{
+    text-align: center;
+  }
+
+  .box{
+    width:200px;
+    height:200px;
+    background-color: green;
+    color: white;
+    font-size:60px;
+    text-align: center;
+    border: solid 2px black;
+    padding-top: 55px;
+    box-sizing: border-box;
+    transition: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;      
+  }
+     
+</style>
+
+<hr><h1 class="head">2D Transforms</h1><hr>
+<input type="text" #input (keydown)="onMoveRight($event)">
+
+<div #box
+ class="box">Box ({{boxPosition.x}}, {{boxPosition.y}})</div>
