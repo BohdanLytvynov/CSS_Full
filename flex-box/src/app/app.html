@@ -1,0 +1,106 @@
+<style>
+  .container{
+    display: flex;
+    flex-direction: column;        
+    background-color: beige;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border: 2px solid black;
+    background-image: linear-gradient(to left, yellow, green);        
+  }
+
+  .text{        
+    color: white;
+    font-size: 3em;
+  }
+
+  h1{
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .hoverable:hover{
+    font-size: 3em;
+    transition: font-size;
+    transition-duration: 0.5s;
+  }
+</style>
+
+<hr><h1>Flex Box Example</h1><hr>
+
+<div class="container">
+  <div class="flex-container hoverable"><div class="text">A</div></div>
+  <div class="flex-container hoverable"><div class="text">B</div></div>
+  <div class="flex-container hoverable"><div class="text">C</div></div>
+  <div class="flex-container hoverable"><div class="text">D</div></div>
+</div>
+
+<style>
+  .container-2{
+    display: flex;
+    flex-direction: row;        
+    background-color: beige;
+    border: 1px solid black;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .flex-container-2{
+    display: flex;
+    width: 700px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;    
+    border: 2px solid black;
+    background-image: linear-gradient(to left, yellow, green);         
+  }
+
+</style>
+
+<hr><h1>Flex Wrapping (Wrapping)</h1><hr>
+
+<div class="container-2">
+  <div class="flex-container-2 hoverable"><div class="text">A</div></div>
+  <div class="flex-container-2 hoverable"><div class="text">B</div></div>
+  <div class="flex-container-2 hoverable"><div class="text">C</div></div>
+  <div class="flex-container-2 hoverable"><div class="text">D</div></div>
+  <div class="flex-container-2 hoverable"><div class="text">E</div></div>
+</div>
+
+<hr><h1>Flex Alignment</h1><hr>
+
+<style>
+  .container-3{
+    display: flex;
+    flex-direction: row;        
+    background-color: beige;
+    border: 1px solid black;
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .flex-container-3{
+    display: flex;
+    width: 200px;
+    height: 100px;    
+    align-items: center;    
+    border: 2px solid black;
+    background-image: linear-gradient(to left, yellow, green);         
+  }
+
+</style>
+
+<div class="container-3">
+  <div class="flex-container-3"><div class="text">A</div></div>
+  <div class="flex-container-3"><div class="text">B</div></div>
+  <div class="flex-container-3"><div class="text">C</div></div>
+  <div class="flex-container-3"><div class="text">D</div></div>
+  <div class="flex-container-3"><div class="text">E</div></div>
+</div>
