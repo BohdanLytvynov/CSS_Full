@@ -1,0 +1,281 @@
+<style>
+  .item{
+    font-size: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container{
+    width: 800px;
+    background-color: #ddd;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+  }
+
+  .item-1{
+    background-color: orangered;
+  }
+
+  .item-2{
+    background-color: olivedrab;
+  }
+
+  .item-3{
+    background-color: royalblue;
+  }
+
+  .item-4{
+    background-color: palevioletred;
+  }
+
+  .item-5{
+    background-color: goldenrod;
+  }
+
+  .item-6{
+    background-color: blueviolet;
+  }
+</style>
+<h1>Simple 2*3 table example</h1>
+<div class="container">
+  <div class="item item-1">1</div>
+  <div class="item item-2">2</div>
+  <div class="item item-3">3</div>
+  <div class="item item-4">4</div>
+  <div class="item item-5">5</div>
+  <div class="item item-6">6</div>
+</div>
+
+<style>
+  .item2{
+    font-size: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container-2{
+    width: 800px;
+    background-color: #ddd;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px auto;    
+  }
+
+  .item2-1{
+    background-color: orangered;
+  }
+
+  .item2-2{
+    background-color: olivedrab;
+  }
+
+  .item2-3{
+    background-color: royalblue;
+  }
+
+  .item2-4{
+    background-color: palevioletred;
+  }
+
+  .item2-5{
+    background-color: goldenrod;
+  }
+
+  .item2-6{
+    background-color: blueviolet;
+  }
+</style>
+
+<h1>Fractional Units</h1>
+<div class="container-2">
+  <div class="item2 item2-1">1</div>
+  <div class="item2 item2-2">2</div>
+  <div class="item2 item2-3">3 (auto)</div>
+  <div class="item2 item2-4">4</div>
+  <div class="item2 item2-5">5</div>
+  <div class="item2 item2-6">6 (auto)</div>
+</div>
+
+<style>
+  .item3{
+    font-size: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container-3{
+    width: 800px;
+    background-color: #ddd;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
+
+  .item3-1{
+    background-color: orangered;
+    grid-column: 2/4;
+  }
+
+  .item3-2{
+    background-color: olivedrab;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .item3-3{
+    background-color: royalblue;
+  }
+
+  .item3-4{
+    background-color: palevioletred;
+    grid-column: 1/3;
+  }
+
+  .item3-5{
+    background-color: goldenrod;
+  }
+
+  .item3-6{
+    background-color: blueviolet;
+    grid-column: 1 / span 3;
+  }
+</style>
+
+<h1>Positioning of the grid items</h1>
+<div class="container-3">
+  <div class="item3 item3-1">1</div>
+  <div class="item3 item3-2">2</div>
+  <div class="item3 item3-3">3</div>
+  <div class="item3 item3-4">4</div>
+  <div class="item3 item3-5">5</div>
+  <div class="item3 item3-6">6</div>
+</div>
+
+<style>
+  .item4{
+    font-size: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container-4{
+    width: 800px;
+    background-color: #ddd;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
+
+  .item4-1{
+    background-color: orangered;    
+  }
+
+  .item4-2{
+    background-color: olivedrab;    
+  }
+
+  .item4-3{
+    background-color: royalblue;
+  }
+
+  .item4-4{
+    background-color: palevioletred;    
+  }
+
+  .item4-5{
+    background-color: goldenrod;
+  }
+
+  .item4-6{
+    background-color: blueviolet;    
+  }
+</style>
+
+<h1>Simple Layout using grid css</h1>
+<app-simple-layout></app-simple-layout>
+
+<h1>Grid Area Layout</h1>
+<app-grid-area></app-grid-area>
+
+<h1>Aligning Grid Items</h1>
+
+<style>
+  .item5{
+    font-size: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .container-5{
+    width: 600px;
+    background-color: #ddd;
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 100px);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    justify-items:start;
+  }
+
+  .item5-1{
+    background-color: orangered;    
+  }
+
+  .item5-2{
+    background-color: olivedrab;    
+  }
+
+  .item5-3{
+    background-color: royalblue;
+  }
+
+  .item5-4{
+    background-color: palevioletred;    
+  }
+
+  .item5-5{
+    background-color: goldenrod;
+  }
+
+  .item5-6{
+    background-color: blueviolet;    
+  }
+
+  .item5-7{
+    background-color: green;    
+  }
+
+  .item5-8{
+    background-color: yellow;    
+  }
+</style>
+
+<div class="container-5 ">
+  <div class="item5 item5-1">1</div>
+  <div class="item5 item5-2">2</div>
+  <div class="item5 item5-3">3</div>
+  <div class="item5 item5-4">4</div>
+  <div class="item5 item5-5">5</div>
+  <div class="item5 item5-6">6</div>
+  <div class="item5 item5-7">7</div>
+  <div class="item5 item5-8">8</div>
+</div>
+
+
